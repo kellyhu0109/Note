@@ -2,6 +2,11 @@
 
 git config --global user.name "username"
 git config --global user.email "name@gmail.com"
+git remote add origin https://github.com/$$$$/*****.git
+--> git remote add origin <url> <--
+# $$$$ is github account
+# ***** is github repository name
+
 cat ~/.gitconfig
 
 [user]
@@ -32,3 +37,16 @@ git push origin master
 
 git checkout A  (back to A status)
 git checkout master  (master the newest)
+
+///////////////////////////////////////////
+<worng>
+1) ! [rejected] master -> master (fetch first)
+--> git pull
+
+2) ! [rejected] master -> master (non-fast-forward)
+--> git pull origin master
+      <branch master -> FETCH_HEAD>
+      fatal: refusing to merge unrelated histories
+
+--> git pull origin master --allow-unrelated-histories
+	# By default, git merge command refuses to merge histories that do not share a common ancestor.
