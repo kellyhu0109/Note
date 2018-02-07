@@ -1,5 +1,3 @@
-//push git
-
 git config --global user.name "username"
 git config --global user.email "name@gmail.com"
 git remote add origin https://github.com/$$$$/*****.git
@@ -8,7 +6,7 @@ git remote add origin https://github.com/$$$$/*****.git
 # ***** is github repository name
 
 cat ~/.gitconfig
-
+>>>>
 [user]
 	name = kellyhu0109
 	email = kellyhu0109@gmail.com
@@ -19,14 +17,16 @@ cat ~/.gitconfig
 	co = commit
 [core]
 	editor = vim
+>>>>
 
 vim ~/.gitconfig
-
+>>>>
 [alias]
 	cm = commit -m
 	s = status
 	l = log
 	upload = push origin master
+>>>>
 
 cd Desktop/filename/
 git init  (initialization)
@@ -50,6 +50,4 @@ git checkout master  (master the newest)
 
 --> git pull origin master --allow-unrelated-histories
 	# By default, git merge command refuses to merge histories that do not share a common ancestor.
-
-
 
