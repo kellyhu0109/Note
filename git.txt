@@ -1,3 +1,5 @@
+//push git
+
 git config --global user.name "username"
 git config --global user.email "name@gmail.com"
 cat ~/.gitconfig
