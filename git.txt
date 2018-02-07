@@ -50,3 +50,6 @@ git checkout master  (master the newest)
 
 --> git pull origin master --allow-unrelated-histories
 	# By default, git merge command refuses to merge histories that do not share a common ancestor.
+
+
+
