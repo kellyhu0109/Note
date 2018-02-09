@@ -13,3 +13,14 @@ def home(name):
 run(host='localhost', port=9999)
 
 ```
+
+```python=
+from bottle import route, run, static_file #導入html檔案
+
+@route('/')
+def home():
+    return static_file('index.html',root='.')
+
+run(host='localhost', port=9999)
+```
+
