@@ -1,3 +1,8 @@
+python web
+==
+url = localhost:9999/hello
+<name> 為自己輸入的值會帶進 return 中
+
 ```python=
 from bottle import route, run  
   
