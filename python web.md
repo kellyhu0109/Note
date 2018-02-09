@@ -13,9 +13,10 @@ def home(name):
 run(host='localhost', port=9999)
 
 ```
+- 導入html檔案
 
 ```python=
-from bottle import route, run, static_file #導入html檔案
+from bottle import route, run, static_file
 
 @route('/')
 def home():
@@ -23,4 +24,6 @@ def home():
 
 run(host='localhost', port=9999)
 ```
+- run(reloader=True)
+	- python 不用重整，網頁重整後 .py 會自動 update
 
