@@ -7,7 +7,7 @@
 
 ## ²Ä¤@¦¸¤W¶Ç¨ì repositories ¤~»Ý°µ
 - git remote add origin https://github.com/$$$$/*****.git
-- git remote add origin <url>
+- git remote add origin \<url\>
 	- $$$$ is github account
 	- ***** is github repository name
 
@@ -21,7 +21,7 @@
 [color]
 	ui = true
 [alias]
-	lg = log --color --graph --all --pretty=format:¿%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset¿ --abbrev-commit ¿
+	lg = log --color --graph --all --pretty=format:?Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset?--abbrev-commit ?
 	co = commit
 [core]
 	editor = vim
@@ -38,14 +38,14 @@
 ```
 
 # ¦p¦ó¾Þ§@ git
-- cd Desktop/<filename>/
+- cd Desktop/\<filename\>/
 	- ¶i¤J­n§ó·s/±À¨ì git ¤WªºÀÉ®×
 - git init . 
 	- initialization
 	- ±NÀÉ®×¤å¥óªì©l¤Æ
 - git status
 	- ¬d¬Ý¥Ø«e¸ê®Æ§¨ git ªºª¬ºA
-- git commit -am "<txt>"
+- git commit -am "\<txt\>"
 	- ±N³o¦¸­n commit ¬ö¿ýªº¤å¦r¶Ç¤W¥h
 - git add .
 	- ±NÀÉ®×¤ºªº¤å¥ó³£§ó·s¤W¥h
@@ -55,9 +55,9 @@
 # ¨ä¥L git ªº«ü¥O
 - git branch
 	- ¬d¬Ý¥Ø«eªº git ¤W¦³­þ¨Ç¤À¤ä
-- git branch <name>
-	- ·s¼W¤@­Ó¦W¬° <name> ¤À¤ä
-- git checkout <A>
+- git branch \<name\>
+	- ·s¼W¤@­Ó¦W¬° \<name\> ¤À¤ä
+- git checkout \<A\>
 	- ¤Á´«¨ì A ¤À¤ä
 - git checkout master
 	- ¤Á¦^ master ¤À¤ä
