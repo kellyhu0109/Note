@@ -1,18 +1,18 @@
-# ¦b Bash ¤¤µn¤J username ©M useremail
+# åœ¨ Bash ä¸­ç™»å…¥ username å’Œ useremail
 - git config --global user.name "username"
 - git config --global user.email "name@gmail.com"
 
-# ±NÀÉ®×¤U¸ü¨ì¥»¾÷
+# å°‡æª”æ¡ˆä¸‹è¼‰åˆ°æœ¬æ©Ÿ
 - git clone https://github.com/$$$$/*****.git
 
-## ²Ä¤@¦¸¤W¶Ç¨ì repositories ¤~»İ°µ
+## ç¬¬ä¸€æ¬¡ä¸Šå‚³åˆ° repositories æ‰éœ€åš
 - git remote add origin https://github.com/$$$$/*****.git
 - git remote add origin \<url\>
 	- $$$$ is github account
 	- ***** is github repository name
 
-# §ó§ï¤@¨Ç³]©wÀÉªº¦W¦r¡A¤§«á·|¥²¸û¦n¾Ş§@
-- ¬d¬İ¥Ø«e³]©wÀÉ
+# æ›´æ”¹ä¸€äº›è¨­å®šæª”çš„åå­—ï¼Œä¹‹å¾Œæœƒå¿…è¼ƒå¥½æ“ä½œ
+- æŸ¥çœ‹ç›®å‰è¨­å®šæª”
 	- cat ~/.gitconfig
 ```git=
 [user]
@@ -27,7 +27,7 @@
 	editor = vim
 ```
 
-- §ó§ï³]©wÀÉ
+- æ›´æ”¹è¨­å®šæª”
 	- vim ~/.gitconfig
 ```git=
 [alias]
@@ -37,54 +37,57 @@
 	upload = push origin master
 ```
 
-# ¦p¦ó¾Ş§@ git
+# å¦‚ä½•æ“ä½œ git
 - cd Desktop/\<filename\>/
-	- ¶i¤J­n§ó·s/±À¨ì git ¤WªºÀÉ®×
+	- é€²å…¥è¦æ›´æ–°/æ¨åˆ° git ä¸Šçš„æª”æ¡ˆ
 - git init . 
 	- initialization
-	- ±NÀÉ®×¤å¥óªì©l¤Æ
+	- å°‡æª”æ¡ˆæ–‡ä»¶åˆå§‹åŒ–
 - git status
-	- ¬d¬İ¥Ø«e¸ê®Æ§¨ git ªºª¬ºA
+	- æŸ¥çœ‹ç›®å‰è³‡æ–™å¤¾ git çš„ç‹€æ…‹
 - git commit -am "\<txt\>"
-	- ±N³o¦¸­n commit ¬ö¿ıªº¤å¦r¶Ç¤W¥h
+	- å°‡é€™æ¬¡è¦ commit ç´€éŒ„çš„æ–‡å­—å‚³ä¸Šå»
 - git add .
-	- ±NÀÉ®×¤ºªº¤å¥ó³£§ó·s¤W¥h
+	- å°‡æª”æ¡ˆå…§çš„æ–‡ä»¶éƒ½æ›´æ–°ä¸Šå»
 - git push origin master
-	- ±NÀÉ®×±À¤W master
+	- å°‡æª”æ¡ˆæ¨ä¸Š master
 	
-## ³]©w©¿²¤²M³æ
-©ñ¦b¥Ø¿ı²M³æªº³Ì¤W¼h
+## è¨­å®šå¿½ç•¥æ¸…å–®
+æ”¾åœ¨ç›®éŒ„æ¸…å–®çš„æœ€ä¸Šå±¤
 - vim .gitignore
-> test.txt -> ¥Nªí©¿²¤¯S©wÀÉ®× \n
-> \*.jar -> ¥Nªí©¿²¤¥H.jarµ²§Àªº©Ò¦³ÀÉ®× \n
-> !lib.jar -> (©µÄò\*.jar)¥Nªí¤£­n©¿²¤¬Y­Ó.jarªºÀÉ®×¡A \n
-> bin/ -> ©¿²¤bin/³o­Ó¸ê®Æ§¨ªº©Ò¦³ÀÉ®×
+> test.txt -> ä»£è¡¨å¿½ç•¥ç‰¹å®šæª”æ¡ˆ
+> 
+> \*.jar -> ä»£è¡¨å¿½ç•¥ä»¥.jarçµå°¾çš„æ‰€æœ‰æª”æ¡ˆ
+> 
+> !lib.jar -> (å»¶çºŒ\*.jar)ä»£è¡¨ä¸è¦å¿½ç•¥æŸå€‹.jarçš„æª”æ¡ˆ
+> 
+> bin/ -> å¿½ç•¥bin/é€™å€‹è³‡æ–™å¤¾çš„æ‰€æœ‰æª”æ¡ˆ
 
-# ¨ä¥L git ªº«ü¥O
+# å…¶ä»– git çš„æŒ‡ä»¤
 - git branch
-	- ¬d¬İ¥Ø«eªº git ¤W¦³­ş¨Ç¤À¤ä
+	- æŸ¥çœ‹ç›®å‰çš„ git ä¸Šæœ‰å“ªäº›åˆ†æ”¯
 - git branch \<name\>
-	- ·s¼W¤@­Ó¦W¬° \<name\> ¤À¤ä
+	- æ–°å¢ä¸€å€‹åç‚º \<name\> åˆ†æ”¯
 - git checkout \<A\>
-	- ¤Á´«¨ì A ¤À¤ä
+	- åˆ‡æ›åˆ° A åˆ†æ”¯
 - git checkout master
-	- ¤Á¦^ master ¤À¤ä
+	- åˆ‡å› master åˆ†æ”¯
 - git log
-	- Åã¥ÜÅÜ°Êªº¬ö¿ı
+	- é¡¯ç¤ºè®Šå‹•çš„ç´€éŒ„
 	- git log --oneline
-		- ±NÅã¥Üªº¬ö¿ı¥H¤@¦æªº¤è¦¡Åã¥Ü
+		- å°‡é¡¯ç¤ºçš„ç´€éŒ„ä»¥ä¸€è¡Œçš„æ–¹å¼é¡¯ç¤º
 - git restore --staged \<file\>
-	- ¨ú®ø¤w¸gadd¤W¥hªº¯S©w¸ê®Æ
+	- å–æ¶ˆå·²ç¶“addä¸Šå»çš„ç‰¹å®šè³‡æ–™
 
-# ¿ù»~¸Ñ¨M worng
+# éŒ¯èª¤è§£æ±º worng
 1. ! [rejected] master -> master (fetch first)
-- git pull
+    - git pull
 
 2. ! [rejected] master -> master (non-fast-forward)
-- git pull origin master
-	- <branch master -> FETCH_HEAD>
-	fatal: refusing to merge unrelated histories
+    - git pull origin master
+        - <branch master -> FETCH_HEAD>
+        fatal: refusing to merge unrelated histories
 
-- git pull origin master --allow-unrelated-histories
-	- By default, git merge command refuses to merge histories that do not share a common ancestor.
+    - git pull origin master --allow-unrelated-histories
+        - By default, git merge command refuses to merge histories that do not share a common ancestor.
 
