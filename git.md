@@ -65,7 +65,7 @@
 	- 顯示變動的紀錄
 	- git log --oneline
 		- 將顯示的紀錄以一行的方式顯示
-- git restore --staged XXX.txt
+- git restore --staged \<file\>
 	- 取消已經add上去的特定資料
 
 # 錯誤解決 worng
