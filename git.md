@@ -51,6 +51,14 @@
 	- 將檔案內的文件都更新上去
 - git push origin master
 	- 將檔案推上 master
+	
+## 設定忽略清單
+放在目錄清單的最上層
+- vim .gitignore
+> test.txt -> 代表忽略特定檔案
+> \*.jar -> 代表忽略以.jar結尾的所有檔案
+> !lib.jar -> (延續\*.jar)代表不要忽略某個.jar的檔案，
+> bin/ -> 忽略bin/這個資料夾的所有檔案
 
 # 其他 git 的指令
 - git branch
