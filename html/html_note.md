@@ -7,6 +7,7 @@
 | \<img src="img_url"\> | 段落 |
 | \<!-- ... --\> | 註解 |
 | \<pre\> ... \</pre\> | 依照原有的空白、換行顯示 |
+| \<input type="" name="" value=""\> | 輸入方塊、送出按鈕 |
 
 ## 表單
 > 表示方式：\<from\> ... \</from\>
@@ -24,6 +25,20 @@
     ...
 </form>
 ```
+## 輸入框 input
+> 表示方式：\<input type="" name="" value=""\>
+- 屬性
+    - type：種類，可以分為一般輸入、密碼模式、按鈕
+    - name：欄位名稱
+        - 一般輸入框傳送文字：`<input type="text" name="username">`
+        - 密碼：`<input type="password" name="password">`
+        - 按鈕：
+            - 送出：`<input type="submit" name="">`
+            - 重設：`<input type="reset" name="">`
+    - value：預設文字 
+- 多行輸入
+    - 可設定欄數(cols)、行數(rows)
+    - `<textarea name="note" cols="30px" rows="5"></textarea>`
 
 # 特殊字元表示法
 | 要顯示的字元或符號 | HTML文件中的特殊寫法 |
