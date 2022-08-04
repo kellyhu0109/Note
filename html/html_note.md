@@ -18,7 +18,7 @@
         - 設定資料送出的方式
             - get
                 - 若是使用 HTTP 通訊協定中的 GET 方法送出資料，**使用者傳送的資料會以附在 URL 內的方式(明碼)傳送，會有資安的疑慮、不安全**，且不能傳送超過 1024 bytes 的資料。
-            - post <mark>recommend</mark>
+            - post `recommend`
                 - 使用 HTTP 通訊協定中的 POST 方法傳送資料，會將**使用者輸入的資料附加於 HTTP 的通訊檔頭送出，較安全**，且沒有傳送的大小限制。
 ```html=
 <form action='' method=''>
