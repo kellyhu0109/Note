@@ -37,7 +37,23 @@
             - 重設：`<input type="reset" name="">`
             - 單選紐(radio)：`<input type="radio" name="">[要顯示的選項名稱]`
             - 多選紐(checkbox)：`<input type="checkbox" name="">[要顯示的選項名稱]`
-            - [how to solve multi checkbox in server?](https://stackoverflow.com/questions/18745456/handle-multiple-checkboxes-with-a-single-serverside-variable)
+                - [how to solve multi checkboxes in server?](https://stackoverflow.com/questions/18745456/handle-multiple-checkboxes-with-a-single-serverside-variable)
+                ```python=
+                # python
+                # (1)
+                myList = self.request.get('object_list', allow_multiple=True)
+                # (2)
+                myList = self.request.POST.getall('sports_played') # or try get_all()
+
+                # django
+                # in the django `request.POST` is a QueryDict object, so can use getlist to change the value as list
+                myList = request.POST.getlist('sports_played')
+
+                # PHP
+                # can direct change the mode in html as below
+                <input type="checkbox" name="fruit[]" value="apple">蘋果
+                # if select more than one checkbox, the values will be sent as array
+                ```
     - value：預設文字 
 - 多行輸入
     - 可設定欄數(cols)、行數(rows)
