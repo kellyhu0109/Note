@@ -7,7 +7,7 @@
 | \<img src="img_url"\> | 段落 |
 | \<!-- ... --\> | 註解 |
 | \<pre\> ... \</pre\> | 依照原有的空白、換行顯示 |
-| \<input type="" name="" value=""\> | 輸入方塊、送出按鈕 |
+| \<input type="" name="" value=""\> | 輸入方塊、選則方塊、送出按鈕 |
 
 ## 表單
 > 表示方式：\<from\> ... \</from\>
@@ -18,7 +18,7 @@
         - 設定資料送出的方式
             - get
                 - 若是使用 HTTP 通訊協定中的 GET 方法送出資料，**使用者傳送的資料會以附在 URL 內的方式(明碼)傳送，會有資安的疑慮、不安全**，且不能傳送超過 1024 bytes 的資料。
-            - post ==recommend==
+            - post <mark>recommend</mark>
                 - 使用 HTTP 通訊協定中的 POST 方法傳送資料，會將**使用者輸入的資料附加於 HTTP 的通訊檔頭送出，較安全**，且沒有傳送的大小限制。
 ```html=
 <form action='' method=''>
@@ -52,7 +52,7 @@
                 # PHP
                 # can direct change the mode in html as below
                 <input type="checkbox" name="fruit[]" value="apple">蘋果
-                # if select more than one checkbox, the values will be sent as array
+                # if select more than one checkbox, the values will be sent as an array
                 ```
     - value：預設文字 
 - 多行輸入
