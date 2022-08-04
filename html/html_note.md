@@ -7,10 +7,10 @@
 | \<img src="img_url"\> | 段落 |
 | \<!-- ... --\> | 註解 |
 | \<pre\> ... \</pre\> | 依照原有的空白、換行顯示 |
-| \<input type="" name="" value=""\> | 輸入方塊、選則方塊、送出按鈕 |
+| \<input type="" name="" value=""\> | 輸入方塊、選取方塊、送出按鈕 |
 
-## 表單
-> 表示方式：\<from\> ... \</from\>
+## form 表單
+> 表示方式：\<from action="" method=""\> ... \</from\>
 - 在寫form時，必要的兩個屬性
     - action
         - 設定表單資料要送到哪裡
@@ -25,7 +25,8 @@
     ...
 </form>
 ```
-## 輸入框 input
+
+## input 輸入框、按鈕、選取方塊
 > 表示方式：\<input type="" name="" value=""\>
 - 屬性
     - type：種類，可以分為一般輸入、密碼模式、按鈕
@@ -58,6 +59,25 @@
 - 多行輸入
     - 可設定欄數(cols)、行數(rows)
     - `<textarea name="note" cols="30px" rows="5"></textarea>`
+
+## select 選取方塊
+> 表示方式：
+```html=
+<select name="dropmenu" size="3" multiple>
+   <option value="0">選項名稱</option>
+</select>
+```
+- 有分為下列三種表示方式
+    - 下拉式選單
+        - `<select name="dropmenu"></selct>`
+    - 固定式選單(單選)
+        - `<select name="dropmenu" size="3"></selct>`
+        - 畫面上固定三個選項，若有多的選項則是滾動的方式往下選
+    - 固定式選單(複選)
+        - `<select name="dropmenu" size="3" multiple></selct>`
+        - 按住 `ctrl` 可以一次選取多項
+- 設定選項 `option` 時可以選擇要不要設 `value`，若沒有指定的話，傳送的選項將會是設定的`選項名稱`字串。
+
 
 # 特殊字元表示法
 | 要顯示的字元或符號 | HTML文件中的特殊寫法 |

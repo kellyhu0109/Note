@@ -11,18 +11,69 @@
 		<input type="radio" name="gender" value="male">男
 		<input type="radio" name="gender" value="female">女
 		<br>
+
 		水果：
+		<!-- 在Python中可以以list直接迭代抓取 -->
+		<!-- 在網址上會顯示"fruit=apple&fruit=banana" -->
 		<input type="checkbox" name="fruit" value="apple">蘋果
 		<input type="checkbox" name="fruit" value="banana">香蕉
 		<input type="checkbox" name="fruit" value="guava">芭樂
 		<input type="checkbox" name="fruit" value="grape">葡萄
 		<input type="checkbox" name="fruit" value="papaya">木瓜
 		<br>
+
+		語言：
+		<!-- PHP中使用，以array方式抓取資料 -->
+		<!-- 在網址上會顯示"language%5B%5D=chinese&language%5B%5D=english" -->
+		<input type="checkbox" name="language[]" value="chinese">中文
+		<input type="checkbox" name="language[]" value="english">英文
+		<input type="checkbox" name="language[]" value="japanese">日文
+		<input type="checkbox" name="language[]" value="korean">韓文
+		<br>
+
 		食物：
+		<!-- 以不同的name命名抓取 -->
+		<!-- 在網址上會顯示"hamburger=on&steak=on" -->
 		<input type="checkbox" name="hamburger">漢堡
 		<input type="checkbox" name="sandwich">三明治
 		<input type="checkbox" name="steak">牛排
 		<br>
+
+		程式語言：
+		<!-- 下拉式選單 -->
+		<select name="code">
+			<option>python</option>
+			<option>php</option>
+			<option>java</option>
+			<option>ruby</option>
+			<option>javascript</option>
+		</select>
+		<br>
+
+		程度：<br>
+		<!-- 固定選單、單選 -->
+		<select name="degree" size="3">
+			<option value="0">國小</option>
+			<option value="1">國中</option>
+			<option value="2">高中</option>
+			<option value="3">大學</option>
+			<option value="4">研究所</option>
+		</select>
+		<br>
+
+		喜好：(按住ctrl可進行複選)<br>
+		<!-- 固定選單、複選 -->
+		<select name="interest" size="4" multiple>
+			<option>跑步</option>
+			<option>聽音樂</option>
+			<option>追劇</option>
+			<option>畫畫</option>
+			<option>閱讀</option>
+			<option>寫作</option>
+			<option>寫程式</option>
+		</select>
+		<br><br>
+
 		<input type="submit" name="">
 		<input type="reset" name="">
 	</form>
