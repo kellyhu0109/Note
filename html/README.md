@@ -1,6 +1,6 @@
 HTML Note
 ===
-# 標籤
+## 標籤
 | 標籤 | 意義 |
 | --- | --- |
 | \<p\> ... \</p\> | 段落 |
@@ -11,7 +11,7 @@ HTML Note
 | \<pre\> ... \</pre\> | 依照原有的空白、換行顯示 |
 | \<input type="" name="" value=""\> | 輸入方塊、選取方塊、送出按鈕 |
 
-## form 表單
+### form 表單
 > 表示方式：\<from action="" method=""\> ... \</from\>
 - 在寫form時，必要的兩個屬性
     - action
@@ -62,7 +62,7 @@ HTML Note
     - 可設定欄數(cols)、行數(rows)
     - `<textarea name="note" cols="30px" rows="5"></textarea>`
 
-## select 選取方塊
+### select 選取方塊
 > 表示方式：
 ```html=
 <select name="dropmenu" size="3" multiple>
@@ -81,7 +81,7 @@ HTML Note
 - 設定選項 `option` 時可以選擇要不要設 `value`，若沒有指定的話，傳送的選項將會是設定的`選項名稱`字串。
 
 
-# 特殊字元表示法
+## 特殊字元表示法
 | 要顯示的字元或符號 | HTML文件中的特殊寫法 |
 | --- | --- |
 | < | \&lt; |
