@@ -31,18 +31,18 @@ CSS Note
 
 # 三種套用 CSS 的方式
 1. 插在 HTML `<head>...</head>` 中
-- ```html=
-  <head>
-	  <style type="text/css">
-	  ...
-	  </style>
-  </head>
-  ```
-- `<style>` 標籤中的 `type="text/css"` 意思是告訴瀏覽器「直到此標籤結束為止，從下一列開始是用來定義CSS樣式」
+	- ```html=
+	  <head>
+		  <style type="text/css">
+		  ...
+		  </style>
+	  </head>
+	  ```
+	- `<style>` 標籤中的 `type="text/css"` 意思是告訴瀏覽器「直到此標籤結束為止，從下一列開始是用來定義CSS樣式」
 2. 直接插在標籤內
-```html=
-<p style="color: red; font-size: 20px">Hello</p>
-```
+	- ```html=
+	  <p style="color: red; font-size: 20px">Hello</p>
+	  ```
 3. 另外寫一個 css 檔，再由 HTML 呼叫引入
 	- 有兩種方式，都放在 `<head>...</head>` 中
 ```html=
