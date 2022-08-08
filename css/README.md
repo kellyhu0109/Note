@@ -45,12 +45,12 @@ CSS Note
 	  ```
 3. 另外寫一個 css 檔，再由 HTML 呼叫引入
 	- 有兩種方式，都放在 `<head>...</head>` 中
-```html=
-<!-- 方法一 -->
-<link rel="stylesheet" type="text/css" href="css檔案位置">
+	- ```html=
+	  <!-- 方法一 -->
+	  <link rel="stylesheet" type="text/css" href="css檔案位置">
 
-<!-- 方法二 -->
-<style type="text/css">
-	@import url(css檔案位置);
-</style>
-```
+	  <!-- 方法二 -->
+	  <style type="text/css">
+		  @import url(css檔案位置);
+	  </style>
+	  ```
