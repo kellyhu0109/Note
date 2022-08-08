@@ -31,7 +31,7 @@ CSS Note
 
 # 三種套用 CSS 的方式
 1. 插在 HTML `<head>...</head>` 中
-- 	```html=
+- ```html=
 	<head>
 		<style type="text/css">
 		...
