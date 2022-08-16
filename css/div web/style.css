@@ -1,0 +1,15 @@
+div{
+	float: left;
+}
+
+h1{
+	left: 20px;
+}
+
+p{
+	text-align: center;
+}
+
+.author{
+	text-align: right;
+}
