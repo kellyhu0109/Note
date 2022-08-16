@@ -1,3 +1,6 @@
+/*可以直接在css樣式檔中再import其他的樣式檔*/
+@import url(attach.css);
+
 p{
 	color: blue;
 }
